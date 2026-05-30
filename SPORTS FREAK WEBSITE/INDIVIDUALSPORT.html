@@ -1,0 +1,819 @@
+<html>
+<head>
+<title>INDVIDUAL SPORT COLLECTION </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+	body{
+	background-color:#DBDBDB;
+
+	}
+	/* NAVBAR */
+
+		.navbar{
+
+			background:#fff;
+
+			border:none;
+
+			border-radius:0;
+
+			margin-bottom:20px;
+
+			padding:5px 0;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		/* LOGO + BRAND */
+
+		.navbar-brand{
+
+			display:flex;
+
+			align-items:center;
+
+			padding-left:20px;
+
+			height:70px;
+		}
+
+		.navbar-brand img{
+
+			width:70px;
+
+			height:70px;
+
+			border-radius:50%;
+
+			margin-right:12px;
+		}
+
+		.navbar-brand span{
+
+			color:#e63946;
+
+			font-size:34px;
+
+			font-family:Georgia, serif;
+
+			font-weight:bold;
+		}
+
+		/* MENU */
+
+		.navbar-nav{
+
+			margin-top:8px;
+		}
+
+		.navbar-nav li a{
+
+			color:#333 !important;
+
+			font-size:18px;
+
+			font-weight:bold;
+
+			padding:20px;
+
+			transition:0.3s;
+			}
+
+		.navbar-nav li a:hover{
+
+			color:#e63946 !important;
+		}
+		
+	/*indv-sport*/
+
+	.indv-BOX {
+	 
+		background: #ED213A;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		font-family:monaco;
+		color: white;
+		
+		margin-bottom:15px;
+		
+		}
+		
+	.indv-CHESS {
+	
+		padding:10px;
+		 
+		background: #ED213A;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		font-family:monaco;
+		
+		color: white;
+		
+		margin-bottom:15px;
+		
+		}
+	
+	.ts-content p {
+
+		font-size: 16px;
+		
+		color: #ddd;
+		
+		}
+
+
+	.product-card{
+		padding:5px;
+		
+		border-radius:8px;
+		
+		text-align:center;
+		
+		margin-bottom:5px;
+		
+		transition:0.3s;
+		}
+		
+	.product-img{
+		height:300px;
+		
+		object-fit:contain;
+		
+		margin-bottom:5px;
+		
+		}
+
+	.product{
+		font-size:15px;
+		
+		font-weight:600;
+		
+		margin-bottom:5px;
+		
+		}
+
+	.price{
+			
+		color:black;
+		
+		font-size:13px;
+		
+		margin-bottom:10px;
+		
+		}
+
+	.btn-buy{
+		padding:10px;
+		
+		background-color:#579999;
+		
+		text-align:center;
+		
+		
+		color:white;
+	
+		border:none;
+		
+		}
+		.btn-cart{
+		padding:10px;
+		background-color:#E34646;
+		text-align:center;
+		color:white;
+		border:none;
+		}
+		.btn-buy:hover{
+		background-color:#D6A367;
+		color:#fff;
+		}
+
+		.btn-cart:hover{
+		background-color:#D6A367;
+		color:#fff;
+
+		}
+
+		.br1{
+		margin-left:90px;
+		}
+
+		.p2b{
+		margin-left:30px;
+		}
+
+ /* FOOTER */
+
+			.footer-section{
+				background-color:black;
+
+				color:white;
+
+				padding:50px 0 20px;
+
+				margin-top:50px;
+				}
+
+			.footer-logo{
+
+				color:#e63946;
+
+				font-weight:bold;
+
+				margin-bottom:20px;
+				}
+
+			.footer-box h3{
+			font-family:monaco;
+
+				color:#e63946;
+				
+
+				margin-bottom:20px;
+
+				font-weight:bold;
+				}
+
+			.footer-box p{
+
+				color:#ccc;
+
+				line-height:28px;
+				}
+
+			.footer-links{
+
+				list-style:none;
+
+				padding:0;
+				}
+
+			.footer-links li{
+
+				margin-bottom:12px;
+				}
+
+			.footer-links li a{
+
+				color:#ccc;
+
+				text-decoration:none;
+
+				transition:0.3s;
+				}
+
+			.footer-links li a:hover{
+
+				color:#e63946;
+
+				padding-left:5px;
+				}
+
+			.footer-section hr{
+
+				border-color:#333;
+
+				margin-top:30px;
+				}
+
+			.footer-bottom{
+
+				text-align:center;
+
+				color:#aaa;
+
+				margin-top:15px;
+				}
+		
+
+</style>
+<!-- NAVBAR -->
+<section>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="HOMEPAGE.html">
+
+                <img src="img/SFLogo.jpeg" alt="Sports Freak Logo">
+
+                <span>SPORTS FREAK</span>
+
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right"
+             id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="HOMEPAGE.html">HOME</a></li>
+
+                <li><a href="TEAMSPORT.html">TEAM SPORT</a></li>
+
+                <li><a href="INDIVIDUALSPORT.html">INDIVIDUAL SPORT</a></li>
+
+                <li><a href="GAMERULE.html">GAME RULES</a></li>
+
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+</section>
+
+<!---BOXING----------------------------->
+<section >
+<div class="container-fluid indv-BOX text-center">
+  <div class="ts-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1>INDIVIDUAL SPORT COLLECTIONS</h1>
+	<h2>BOXING</h2>
+    <h5>EXPLORE ALL BOXING PRODUCTS</h5>
+  </div>
+</div>
+
+
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/g1.jpg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">USI Lite Contest Boxing Gloves</h4>
+			<h5 class="price">MRP ₹1,743</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/g2.jpg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Invincible White Boxing Gloves</h4>
+			<h5 class="price">MRP- ₹1,549</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">			
+			<div class="product-card text-center">
+			<img src="IMG/BOX/glv0.avif" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">USI Weighted Boxing Gloves</h4>
+			<h5 class="price">MRP- ₹1,999</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/g4.jpg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Synthetic Leathr Boxing Gloves</h4>
+			<h5 class="price">MRP- ₹1,599</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+		</div>
+	</div><br><br>
+		
+				
+<div class="container-fluid br1" >
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/w1.avif" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Hand Wrap (Black)</h4>
+			<h5 class="price">MRP- ₹399</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/w2.webp" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Hand Wrap (Red)</h4>
+			<h5 class="price">MRP- ₹399</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/grip.avif" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Hand Grip</h4>
+			<h5 class="price">MRP- ₹299</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/spdball.jpg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Boxing Speed Ball</h4>
+			<h5 class="price">MRP- ₹3,459</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			</div>
+		</div><br><br>
+		
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/armpad.avif" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Thai Arm Pad</h4>
+			<h5 class="price">MRP- ₹3,499</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/bg1.webp" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Century Boxing Punching Bag(Black) </h4>
+			<h5 class="price">MRP- ₹4,999</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/bg2.webp" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Century Boxing Punching Bag(Red)</h4>
+			<h5 class="price">MRP- ₹4,999</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/mg.webp" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">USI Boxing Mouth Guard</h4>
+			<h5 class="price">MRP- ₹1,299</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+		</div>
+	</div><br><br>
+		
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/gd1.jpg" width="250px" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Invincible Head Guard</h4>
+			<h5 class="price">MRP- ₹2,459</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+		    <div class="product-card text-center">
+			<img src="IMG/BOX/gd2.jpg" width="250px" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Immortal Head Guard (Black)</h4>
+			<h5 class="price">MRP- ₹2,499</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/BOX/gd3.avif" width="250px" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">USI Immortal Head Guard(Red)</h4>
+			<h5 class="price">MRP- ₹2,499</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">			
+			<img src="IMG/BOX/vbg.webp" width="250px" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Vinex Boxing Head Guard</h4>
+			<h5 class="price">MRP- ₹4,259x</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+	</div>
+</div><br><br>
+</section>
+
+<!---CHESS-------------------------------------->
+<section>
+<div class="container-fluid indv-CHESS text-center">
+  <div class="ts-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1></h1>
+	<h2>CHESS COLLECTIONS</h2>
+    <h5>EXPLORE ALL CHESS PRODUCTS</h5>
+  </div>
+</div>
+
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/bd9.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Ebony French Chess Set<h4>
+			<h5 class="price">MRP ₹10,499</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/bd10.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">RoseWood Chess Set</h4>
+			<h5 class="price">MRP- ₹13,299</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">			
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/bd11.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Travel Modern Chess Set</h4>
+			<h5 class="price">MRP- ₹12,099</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/bd12.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Mat Finish Classic Chess Set</h4>
+			<h5 class="price">MRP- ₹17,599</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+		</div>
+	</div><br><br>
+		
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc1.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Stauton Luxury Chess PIeces</h4>
+			<h5 class="price">MRP ₹1,149</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc2.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Black and White premium pieces </h4>
+			<h5 class="price">MRP- ₹1,050</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">			
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc3.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Ancient Wooden Pieces</h4>
+			<h5 class="price">MRP- ₹1,100</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc4.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">French Lordy Plastic Chess Pieces</h4>
+			<h5 class="price">MRP- ₹799</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+		</div>
+	</div><br><br>
+				
+		
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb1.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product"> Brown Walnut Chess Board<h4>
+			<h5 class="price">MRP ₹8,999</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb2.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Deluxe Black And Chess Board</h4>
+			<h5 class="price">MRP- ₹7,449</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">			
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb3.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Beach Wood Chess Board</h4>
+			<h5 class="price">MRP- ₹10,100</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb4.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">RoseWood Chess Board</h4>
+			<h5 class="price">MRP- ₹8,499</h5>
+			<button class="btn btn-buy">BUY</button>
+			<button class="btn btn-cart">ADD TO CART</button>
+			</div>
+			</div>
+		</div>
+	</div><br><br>
+	
+	
+		
+</section>
+<!-- FOOTER -->
+<section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LOGO & ABOUT -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3 class="footer-logo">
+                    SPORTS FREAK
+                </h3>
+
+                <p>
+
+                    Your one-stop destination for premium
+                    Cricket, Football, Boxing and Chess products.
+
+                </p>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="HOMEPAGE.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="TEAMSPORT.html">Team Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="INDIVIDUALSPORT.html">Individual Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="GAMERULE.html">Game Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="ABOUTUS.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="col-md-4 col-sm-12 footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    📍 Chennai, Tamil Nadu
+                </p>
+
+                <p>
+                    📞 6381942795
+                </p>
+
+                <p>
+                    📧 sanjayin440@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SPORTS FREAK | All Rights Reserved
+
+            </p>
+			<p>All images used on this website are for educational purposes only..</P>
+
+        </div>
+
+    </div>
+
+</footer>
+</section>
+
+</body>
+</html>

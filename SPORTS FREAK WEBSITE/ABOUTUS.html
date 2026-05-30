@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+
+    <title>About Us | SPORTS FREAK</title>
+
+    <!-- Bootstrap 3 -->
+
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+
+        body{
+
+            font-family:Arial,sans-serif;
+
+            background:#DBDBDB;
+
+            color:#333;
+        }
+
+       /* NAVBAR */
+
+		.navbar{
+
+			background:#fff;
+
+			border:none;
+
+			border-radius:0;
+
+			margin-bottom:20px;
+
+			padding:5px 0;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		/* LOGO + BRAND */
+
+		.navbar-brand{
+
+			display:flex;
+
+			align-items:center;
+
+			padding-left:20px;
+
+				height:70px;
+		}
+
+		.navbar-brand img{
+
+			width:70px;
+
+			height:70px;
+
+			border-radius:50%;
+
+			margin-right:12px;
+		}
+
+		.navbar-brand span{
+
+			color:#e63946;
+
+			font-size:34px;
+
+			font-family:Georgia, serif;
+
+			font-weight:bold;
+		}
+
+		/* MENU */
+
+		.navbar-nav{
+
+			margin-top:8px;
+		}
+
+		.navbar-nav li a{
+
+			color:#333 !important;
+
+			font-size:18px;
+
+			font-weight:bold;
+
+			padding:20px;
+
+			transition:0.3s;
+			}
+
+		.navbar-nav li a:hover{
+
+			color:#e63946 !important;
+		}
+
+        /* HERO SECTION */
+
+        .hero{
+
+            background:
+            linear-gradient(rgba(255,255,255,0.6),
+            rgba(255,255,255,0.6)),
+            url('img/aboutbg.jpg');
+
+            background-size:cover;
+
+            background-position:center;
+
+			font-family:monaco;
+           
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            text-align:center;
+        }
+
+        .hero h1{
+
+            font-size:30px;
+
+            font-weight:bold;
+
+            color:#e63946;
+        }
+
+        .hero p{
+
+            font-size:20px;
+
+            margin-top:10px;
+
+            color:#444;
+			}
+
+        /* who we are */
+
+        .section{
+
+            padding:50px;
+			
+			}
+
+        .title{
+			font-family:monaco;
+            text-align:center;
+            margin-bottom:5px;
+			
+			}
+
+        .title h2{
+
+            font-size:30px;
+
+            font-weight:bold;
+
+            color:#e63946;
+			}
+
+        .title p{
+
+            color:#666;
+
+            font-size:16px;
+			}
+
+        /* ABOUT BOX */
+
+        .about-box{
+
+            background:white;
+
+            text-size:bold;
+			
+			text-align:justify;
+			
+			line-height:45px;
+			
+			font-family:monaco;
+			
+			font-size: 30px;
+			
+			padding:22px;
+			
+			border-radius:10px;
+			
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+			}
+
+        .about-box p{
+			 text-align:center;
+			 
+            font-size:17px;
+
+            line-height:32px;
+
+            color:#555;
+			}
+
+        /* SPORT CARD */
+
+        .sport-card{
+
+            background:white;
+
+            border-radius:15px;
+
+            overflow:hidden;
+
+            margin-bottom:15px;
+
+            transition:0.3s;
+
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+			
+			}
+
+
+        .sport-card img{
+
+            width:100%;
+
+            height:100%;
+
+            object-fit:cover;
+			
+			}
+
+        .sport-content{
+
+            padding:20px;
+
+            text-align:center;
+			
+			}
+
+        .sport-content h3{
+
+            color:#e63946;
+
+            font-weight:bold;
+			}
+
+        .sport-content p{
+
+            color:#666;
+			}
+
+        /* FEATURE BOX */
+
+        .feature-box{
+
+            background:white;
+
+            padding:30px;
+
+            border-radius:15px;
+
+            text-align:center;
+
+            margin-bottom:20px;
+
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+
+            transition:0.3s;
+			}
+
+        .feature-box:hover{
+
+            transform:translateY(-5px);
+			}
+
+        .feature-box span{
+
+            font-size:40px;
+			}
+
+        .feature-box h3{
+			
+            color:#e63946;
+
+            margin-top:15px;
+
+            font-weight:bold;
+			}
+
+        .feature-box p{
+
+            color:#666;
+
+            line-height:28px;
+			}
+
+        /* CONTACT */
+
+        .contact-box{
+			
+            background:white;
+
+            padding:40px;
+
+            border-radius:15px;
+
+            text-align:center;
+
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2{
+
+            color:#e63946;
+
+            font-weight:bold;
+
+            margin-bottom:25px;
+        }
+
+        .contact-box p{
+
+            font-size:18px;
+
+            line-height:35px;
+
+            color:#555;
+        }
+
+        /* FOOTER */
+
+			.footer-section{
+				background-color:black;
+
+				color:white;
+
+				padding:50px 0 20px;
+
+				margin-top:50px;
+				}
+
+			.footer-logo{
+
+				color:#e63946;
+
+				font-weight:bold;
+
+				margin-bottom:20px;
+				}
+
+			.footer-box h3{
+			font-family:monaco;
+
+				color:#e63946;
+				
+
+				margin-bottom:20px;
+
+				font-weight:bold;
+				}
+
+			.footer-box p{
+
+				color:#ccc;
+
+				line-height:28px;
+				}
+
+			.footer-links{
+
+				list-style:none;
+
+				padding:0;
+				}
+
+			.footer-links li{
+
+				margin-bottom:12px;
+				}
+
+			.footer-links li a{
+
+				color:#ccc;
+
+				text-decoration:none;
+
+				transition:0.3s;
+				}
+
+			.footer-links li a:hover{
+
+				color:#e63946;
+
+				padding-left:5px;
+				}
+
+			.footer-section hr{
+
+				border-color:#333;
+
+				margin-top:30px;
+				}
+
+			.footer-bottom{
+
+				text-align:center;
+
+				color:#aaa;
+
+				margin-top:15px;
+
+
+      
+		    
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<section>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="HOMEPAGE.html">
+
+                <img src="img/SFLogo.jpeg" alt="Sports Freak Logo">
+
+                <span>SPORTS FREAK</span>
+
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right"
+             id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="HOMEPAGE.html">HOME</a></li>
+
+                <li><a href="TEAMSPORT.html">TEAM SPORT</a></li>
+
+                <li><a href="INDIVIDUALSPORT.html">INDIVIDUAL SPORT</a></li>
+
+                <li><a href="GAMERULE.html">GAME RULES</a></li>
+
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+</section><!-- HERO SECTION -->
+
+<div class="hero">
+
+    <div>
+
+        <h1>ABOUT US</h1>
+
+        <p>
+            Passion for Sports Starts Here
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="container section">
+
+    <div class="title">
+
+        <h2>Who We Are</h2>
+
+        <p>
+            Learn more about SPORTS FREAK
+        </p>
+
+    </div>
+
+    <div class="about-box">
+
+        <p>
+
+            SPORTS FREAK is an online and offline sports shop
+            created for sports lovers,<br> athletes and beginners
+            who are passionate about sports and fitness.
+
+        </p>
+
+        <p>
+
+            We specialize in premium sports products for
+            Cricket, Football, Boxing and Chess.<br>
+            Our store provides high-quality equipment,
+            accessories and training essentials at affordable prices.
+
+        </p>
+
+        <p>
+
+            Whether you are a beginner learning the game
+            or a professional athlete preparing for competition,<br>
+            SPORTS FREAK helps you find the perfect products
+            to improve your performance.
+
+        </p>
+
+        <p>
+
+            We carefully select durable and reliable sports gear
+            to ensure comfort, safety and long-lasting performance.<br>
+            From training equipment to match essentials,
+            we provide everything needed for every player.
+
+        </p>
+
+        <p>
+
+            Our mission is to inspire players to stay active,
+            train harder and achieve their goals with confidence.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- SPORTS SECTION -->
+<section>
+<div class="container section">
+
+    <div class="title">
+
+        <h2>Our Sports Categories</h2>
+
+        <p>
+            Explore our sports collections
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-md-3 col-sm-6">
+
+            <div class="sport-card">
+
+              
+				
+                <div class="sport-content">
+
+                    <h3>🏏Cricket</h3>
+
+                    <p>
+                        Premium cricket kits.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-sm-6">
+
+            <div class="sport-card">
+
+
+                <div class="sport-content">
+
+                    <h3>⚽Football</h3>
+
+                    <p>
+                        Jerseys, footballs and shoes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-sm-6">
+
+            <div class="sport-card">
+
+
+                <div class="sport-content">
+
+                    <h3>🥊Boxing</h3>
+
+                    <p>
+                        Gloves, bags and boxing gear.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-sm-6">
+
+            <div class="sport-card">
+
+
+                <div class="sport-content">
+
+                    <h3>♟️Chess</h3>
+
+                    <p>
+                        Chess boards and accessories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<div class="container section">
+
+    <div class="title">
+
+        <h2>Why Choose Us</h2>
+
+        <p>
+            What makes SPORTS FREAK special
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+
+            <div class="feature-box">
+
+                <span>🏆</span>
+
+                <h3>Quality Products</h3>
+
+                <p>
+                    Trusted sports products for all players.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col=sm-4 col-md-4">
+
+            <div class="feature-box">
+
+                <span>💰</span>
+
+                <h3>Affordable Prices</h3>
+
+                <p>
+                    Best quality products at fair prices.
+                </p>
+
+            </div>
+
+        </div>
+
+	<div class="col-xs-12 col=sm-4 col-md-4">
+
+            <div class="feature-box">
+
+                <span>⚡</span>
+
+                <h3>Easy Shopping</h3>
+
+                <p>
+                    Smooth online and offline shopping.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LOGO & ABOUT -->
+
+            <div class="col-xs-12 col-md-4 col-sm-6 footer-box">
+
+                <h3 class="footer-logo">
+                    SPORTS FREAK
+                </h3>
+
+                <p>
+
+                    Your one-stop destination for premium
+                    Cricket, Football, Boxing and Chess products.
+
+                </p>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div class=" col-xs-12 col-md-4 col-sm-6 footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+				
+					 <li>
+                        <a href="HOMEPAGE.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="TEAMSPORT.html">Team Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="INDIVIDUALSPORT.html">Individual Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="GAMERULE.html">Game Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="ABOUTUS.html">About Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class=" col-xs-12 col-md-4 col-sm-12 footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    📍 Chennai, Tamil Nadu
+                </p>
+
+                <p>
+                    📞 6381942795
+                </p>
+
+                <p>
+                    📧 sanjayin440@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SPORTS FREAK | All Rights Reserved
+
+            </p>
+			<p>All images used on this website are for educational purposes only..</P>
+
+        </div>
+
+    </div>
+
+</footer>
+</section>
+</script>
+
+</body>
+</html>
