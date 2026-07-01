@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Checkout | SPORTS FREAK</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+			body{
+
+			margin:0;
+
+			font-family:Arial,sans-serif;
+
+			background:linear-gradient(135deg,#edf2f7,#e2e8f0,#cbd5e1);
+
+			}
+
+			.container{
+
+			width:90%;
+
+			max-width:700px;
+
+			margin:40px auto;
+
+			background:#fff;
+
+			padding:30px;
+
+			border-radius:15px;
+
+			box-shadow:0 0 15px rgba(0,0,0,0.1);
+
+			}
+
+			h1{
+
+			text-align:center;
+
+			color:#222;
+
+			margin-bottom:10px;
+
+			}
+
+			.note{
+
+			background:#fff3cd;
+
+			padding:12px;
+
+			border-radius:8px;
+
+			color:#856404;
+
+			font-weight:bold;
+
+			text-align:center;
+
+			margin-bottom:25px;
+
+			}
+
+			label{
+
+			display:block;
+
+			margin-top:15px;
+
+			font-weight:bold;
+
+			}
+
+			input{
+
+			width:100%;
+
+			padding:12px;
+
+			margin-top:8px;
+
+			border:1px solid #ccc;
+
+			border-radius:8px;
+
+			font-size:16px;
+
+			box-sizing:border-box;
+
+			}
+
+			.radio-group{
+
+			margin-top:15px;
+
+			}
+
+			.radio-group input{
+
+			width:auto;
+
+			margin-right:5px;
+
+			}
+/*==== BUTTON ====*/
+			.btn-confirm{
+
+		display:block;
+
+		width:100%;
+
+		padding:15px;
+
+		margin-top:30px;
+
+		background:#00bfff;
+
+		color:#fff;
+
+		text-align:center;
+
+		text-decoration:none;
+
+		font-family:Monaco,monospace;
+
+		font-size:18px;
+
+		font-weight:bold;
+
+		border-radius:8px;
+
+		transition:0.3s;
+
+		}
+
+		.btn-confirm:hover{
+
+		background:#0099cc;
+
+		color:#fff;
+
+		text-decoration:none;
+
+		}
+
+		
+
+			.cod{
+
+			margin-top:25px;
+
+			padding:15px;
+
+			background:#e8f9e8;
+
+			border-radius:10px;
+
+			font-weight:bold;
+
+			text-align:center;
+
+			color:#0b6b0b;
+
+			}
+			
+			
+
+</style>
+
+</head>
+
+	<body>
+
+			<div class="container">
+
+			<h1>Shipping Address</h1>
+
+			<div class="note">
+
+			⚠ Only Cash On Delivery (COD) is available.
+
+			</div>
+
+			<form id="checkoutForm">
+
+			<label>Pincode *</label>
+
+			<input type="number" id="pincode">
+
+			<label>First Name *</label>
+
+			<input type="text" id="fname">
+
+			<label>Last Name *</label>
+
+			<input type="text" id="lname">
+
+			<label>Phone Number *</label>
+
+			<input type="tel" id="phone">
+
+			<label>Flat / House Number *</label>
+
+			<input type="text" id="house">
+
+			<label>Area / Street *</label>
+
+			<input type="text" id="street">
+
+			<label>Landmark</label>
+
+			<input type="text" id="landmark">
+
+			<label>City *</label>
+
+			<input type="text" id="city">
+
+			<label>State *</label>
+
+			<input type="text" id="state">
+
+			<label>E-mail (Optional)</label>
+
+			<input type="email" id="email">
+
+			<label>Address Type</label>
+
+			<div class="radio-group">
+
+			<label>
+
+			<input type="radio" name="type" checked>
+
+			Home
+
+			</label>
+
+			<label>
+
+			<input type="radio" name="type">
+
+			Office
+
+			</label>
+
+			<label>
+
+			<input type="radio" name="type">
+
+			Others
+
+			</label>
+
+			</div>
+
+			<div class="cod">
+
+			Payment Method : Cash On Delivery Only
+
+			</div>
+
+			<button type="submit" class="btn-confirm">
+
+			Confirm Order
+
+			</button>
+
+			</form>
+
+			</div>
+
+			<script>
+
+			document.getElementById("checkoutForm")
+
+			.addEventListener("submit",function(e){
+
+			e.preventDefault();
+
+			var pincode=document.getElementById("pincode").value.trim();
+
+			var fname=document.getElementById("fname").value.trim();
+
+			var lname=document.getElementById("lname").value.trim();
+
+			var phone=document.getElementById("phone").value.trim();
+
+			var house=document.getElementById("house").value.trim();
+
+			var street=document.getElementById("street").value.trim();
+
+			var city=document.getElementById("city").value.trim();
+
+			var state=document.getElementById("state").value.trim();
+
+			var email=document.getElementById("email").value.trim();
+
+
+			if(pincode===""){
+
+			alert("Please enter pincode.");
+
+			return;
+
+			}
+
+
+			if(!/^\d{6}$/.test(pincode)){
+
+			alert("Pincode must contain 6 digits.");
+
+			return;
+
+			}
+
+
+			if(fname===""){
+
+			alert("Please enter first name.");
+
+			return;
+
+			}
+
+
+			if(lname===""){
+
+			alert("Please enter last name.");
+
+			return;
+
+			}
+
+
+			if(phone===""){
+
+			alert("Please enter phone number.");
+
+			return;
+
+			}
+
+
+			if(!/^\d{10}$/.test(phone)){
+
+			alert("Phone number must contain 10 digits.");
+
+			return;
+
+			}
+
+
+			if(house===""){
+
+			alert("Please enter house number.");
+
+			return;
+
+			}
+
+
+			if(street===""){
+
+			alert("Please enter area or street name.");
+
+			return;
+
+			}
+
+
+			if(city===""){
+
+			alert("Please enter city.");
+
+			return;
+
+			}
+
+
+			if(state===""){
+
+			alert("Please enter state.");
+
+			return;
+
+			}
+
+			if(email!==""){
+
+			var pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+			if(!pattern.test(email)){
+
+			alert("Please enter a valid email address.");
+
+			return;
+
+			}
+
+			}
+
+			window.location.href="ORDER_SUCCESS.html";
+
+			});
+
+</script>
+</body>
+
+</html>
