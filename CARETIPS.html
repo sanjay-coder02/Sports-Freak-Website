@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+<title>CARETIPS | SPORTS FREAK</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+
+<style>
+
+		body{
+
+			font-family:Arial,sans-serif;
+
+			 background:linear-gradient(135deg,#edf2f7,#e2e8f0,#cbd5e1);
+background-attachment:fixed;
+			color:#333;
+		}
+
+			  /* NAVBAR */
+
+		.navbar{
+
+			background:#fff;
+
+			border:none;
+
+			border-radius:0;
+
+			margin-bottom:15px;
+
+			padding:5px 0;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		/* LOGO + BRAND */
+
+		.navbar-brand{
+
+			display:flex;
+
+			align-items:center;
+
+			padding-left:20px;
+
+			height:70px;
+		}
+
+		.navbar-brand img{
+
+			width:70px;
+
+			height:70px;
+
+			border-radius:50%;
+			
+			
+
+			margin-right:12px;
+		}
+
+		.navbar-brand span{
+
+			color:#e63946;
+
+			font-size:34px;
+
+			font-family:Georgia, serif;
+
+			font-weight:bold;
+		}
+
+		/* MENU */
+
+		.navbar-nav{
+
+			margin-top:8px;
+		}
+
+		.navbar-nav li a{
+
+			color:#333 !important;
+
+			font-size:18px;
+
+			font-weight:bold;
+			font-family:monaco;
+
+			padding:20px;
+
+			transition:0.3s;
+			}
+
+		.navbar-nav li a:hover{
+
+			color:#e63946 !important;
+		}
+		@media (max-width:768px){
+
+	.navbar-brand{
+		height:60px;
+		padding-left:10px;
+		white-space:nowrap;
+	}
+
+	.navbar-brand img{
+		width:45px;
+		height:45px;
+		margin-right:8px;
+	}
+
+	.navbar-brand span{
+		font-size:22px;
+	}
+
+		}
+		
+/*=============== HERO ======================*/
+
+		.hero{
+
+		 background:
+            linear-gradient(rgba(255,255,255,0.6),
+            rgba(255,255,255,0.6)),
+            url('img/aboutbg.jpg');
+
+			padding:10px;
+
+			text-align:center;
+
+			margin-bottom:25px;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.hero h1{
+
+			color:#e63946;
+
+			font-family:monaco;
+
+			font-weight:bold;
+		}
+
+		.hero p{
+
+			font-size:18px;
+
+			color:#555;
+		}
+
+		/* CONTENT */
+
+		.section{
+
+			padding:20px;
+		}
+
+		.title{
+
+			text-align:center;
+
+			margin-bottom:20px;
+		}
+
+		.title h2{
+
+			color:#e63946;
+
+			font-weight:bold;
+
+			font-family:monaco;
+		}
+
+		.title p{
+
+			color:#666;
+
+			font-size:16px;
+		}
+
+		.care-box{
+
+			 background:white;
+
+            text-size:bold;
+			
+			text-align:justify;
+			
+			font-family:monaco;
+			
+			padding:35px;
+			
+			border-radius:10px;
+			
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+			
+			margin-bottom:15px;
+		}
+
+		.care-box h3{
+
+			            font-size:20px;
+
+            font-weight:bold;
+
+            color:#e63946;
+		}
+
+		.care-box p{
+
+			font-size:17px;
+
+			line-height:30px;
+
+			color:#555;
+
+			text-align:justify;
+		}
+@media (max-width:768px){
+
+			.care-box{
+				padding:15px;
+				margin:10px;
+				text-align:left;
+				font-size:18px;
+				line-height:30px;
+			}
+
+			.care-box h3{
+				font-size:18px;
+				line-height:28px;
+			}
+
+			.care-box p{
+				font-size:15px;
+				line-height:26px;
+			}
+
+		}
+		
+		h2{
+		text-align:center;
+            font-size:25px;
+
+            font-weight:bold;
+
+            color:#e63946;
+			margin-bottom:10px;
+        }
+
+
+/*=========== FOOTER =============*/
+
+		.footer-section{
+
+			background:black;
+
+			color:white;
+
+			padding:50px 0 20px;
+
+			margin-top:30px;
+		}
+
+		.footer-logo{
+
+			color:#e63946;
+
+			font-weight:bold;
+
+			margin-bottom:20px;
+		}
+
+		.footer-box h3{
+
+			color:#e63946;
+
+			font-family:monaco;
+
+			font-weight:bold;
+		}
+
+		.footer-box p{
+
+			color:#ccc;
+
+			line-height:28px;
+		}
+
+		.footer-links{
+
+			list-style:none;
+
+			padding:0;
+		}
+
+		.footer-links li{
+
+			margin-bottom:12px;
+		}
+
+		.footer-links li a{
+
+			color:#ccc;
+
+			text-decoration:none;
+		}
+
+		.footer-links li a:hover{
+
+			color:#e63946;
+		}
+
+		.footer-bottom{
+
+			text-align:center;
+
+			color:#aaa;
+
+			margin-top:15px;
+		}
+
+		</style>
+
+</head>
+
+<body>
+
+<section>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="img/SFLogo.jpeg" alt="Sports Freak Logo">
+
+                <span>SPORTS FREAK</span>
+
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right"
+             id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="TEAMSPORT.html">TEAM SPORT</a></li>
+
+                <li><a href="INDIVIDUALSPORT.html">INDIVIDUAL SPORT</a></li>
+
+                <li><a href="GAMERULE.html">GAME RULES</a></li>
+				
+				<li><a href="CARETIPS.html">CARE TIPS</a></li>
+
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+</section>
+
+
+		<!-- HERO -->
+
+		<div class="hero">
+
+		<h1>SPORTS EQUIPMENT CARE</h1>
+
+		<p>Protect Your Gear, Improve Your Performance</p>
+
+		</div>
+
+		<!-- CONTENT -->
+
+		<div class="container section">
+
+		<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12">
+		<div class="care-box">
+			
+		
+
+		<h3>1. Why Equipment Care Matters</h3>
+
+		<p>
+		Taking proper care of sports equipment helps improve
+		performance, increase durability and ensure player safety.
+		Regular maintenance can prevent unnecessary damage.
+		</p>
+
+		<h3>2. Cricket Equipment Care</h3>
+
+		<p>
+		Keep cricket bats in a dry place. Clean gloves, pads and
+		helmets after every use and store them properly.
+		</p>
+
+		<h3>3. Football Equipment Care</h3>
+
+		<p>
+		Clean footballs and shoes after every practice session.
+		Wash jerseys regularly and keep them in a dry place.
+		</p>
+
+		<h3>4. Boxing Equipment Care</h3>
+
+		<p>
+		Wipe boxing gloves after each use and allow them to
+		air dry before storing them.
+		</p>
+
+		<h3>5. Chess Equipment Care</h3>
+
+		<p>
+		Store chess boards and pieces in a protective box and
+		keep them away from water and dust.
+		</p>
+
+		<h3>6. Proper Storage Tips</h3>
+
+		<p>
+		Store all sports equipment in a cool, clean and dry
+		place. Avoid stacking heavy items on top of your gear.
+		</p>
+
+		<h3>7. Safety Inspection</h3>
+
+		<p>
+		Check your equipment before every use and replace
+		damaged items immediately.
+		</p>
+
+		<h3>8. Our Commitment</h3>
+
+		<p>
+		SPORTS FREAK encourages every player to maintain
+		their equipment properly for better performance and safety.
+		</p>
+
+		</div>
+		</div>
+		</div></div>
+
+		<!-- FOOTER -->
+
+		<footer class="footer-section">
+
+		<div class="container">
+
+		<div class="row">
+
+		<div class="col-md-4 footer-box">
+
+		<h3 class="footer-logo">
+
+		SPORTS FREAK
+
+		</h3>
+		
+			<ul class="footer-links">
+
+                    <li>
+                        <a href="TERMS.html">Terms & Conditions</a>
+                    </li>
+
+                    <li>
+                        <a href="REFUND.html">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="PRIV_POLICY.html">Privacy Policy</a>
+                    </li>
+					
+                </ul>
+
+		</div>
+
+		<div class="col-md-4 footer-box">
+
+		<h3>Quick Links</h3>
+
+		<ul class="footer-links">
+
+		<li><a href="index.html">Home</a></li>
+
+		<li><a href="TEAMSPORT.html">Team Sport</a></li>
+
+		<li><a href="INDIVIDUALSPORT.html">Individual Sport</a></li>
+
+		<li><a href="GAMERULE.html">Game Rules</a></li>
+
+		<li><a href="ABOUTUS.html">About Us</a></li>
+
+		</ul>
+
+		</div>
+
+		<div class="col-md-4 footer-box">
+
+		<h3>Contact Us</h3>
+
+		<p>📍 Chennai, Tamil Nadu</p>
+
+		<p>📞 6381942795</p>
+
+		<p>📧 sanjayin440@gmail.com</p>
+
+		</div>
+
+		</div>
+
+		<hr>
+
+		<div class="footer-bottom">
+
+		<p>© 2026 SPORTS FREAK | All Rights Reserved</p>
+
+		<p>All images used on this website are for educational purposes only.</p>
+
+		</div>
+
+		</div>
+
+		</footer>
+
+</body>
+
+</html>

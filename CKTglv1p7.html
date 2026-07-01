@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>CRICKET PRODUCTS|SPORTS FREAK</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+		body{
+
+		background:linear-gradient(135deg,#edf2f7,#e2e8f0,#cbd5e1);
+background-attachment:fixed;
+		font-family:'Segoe UI',sans-serif;
+
+		overflow-x:hidden;
+
+		}
+		
+		.row{
+
+		margin-left:0;
+
+		margin-right:0;
+
+		}
+		
+/*=================== NAVBAR ====================*/
+
+		.navbar{
+
+			background:#fff;
+
+			border:none;
+
+			border-radius:0;
+
+			margin-bottom:20px;
+
+			padding:5px 0;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		/* LOGO + BRAND */
+
+		.navbar-brand{
+
+			display:flex;
+
+			align-items:center;
+
+			padding-left:20px;
+
+			height:70px;
+			
+			
+		}
+
+		.navbar-brand img{
+
+			width:70px;
+
+			height:70px;
+
+			border-radius:50%;
+
+			margin-right:12px;
+		}
+
+		.navbar-brand span{
+
+			color:#e63946;
+
+			font-size:34px;
+
+			font-family:Georgia, serif;
+
+			font-weight:bold;
+			
+		}
+
+		/* MENU */
+
+		.navbar-nav{
+
+			margin-top:8px;
+		}
+
+		.navbar-nav li a{
+
+			color:#333 !important;
+
+			font-size:18px;
+
+			font-weight:bold;
+			font-family:monaco;
+
+			padding:20px;
+
+			transition:0.3s;
+			}
+
+		.navbar-nav li a:hover{
+
+			color:#e63946 !important;
+		}
+		
+	@media (max-width:768px){
+
+	.navbar-brand{
+		height:60px;
+		padding-left:10px;
+		white-space:nowrap;
+	}
+
+	.navbar-brand img{
+		width:45px;
+		height:45px;
+		margin-right:8px;
+	}
+
+	.navbar-brand span{
+		font-size:22px;
+	}
+
+		}
+		
+ 
+/*=============== ENTIRE PAGE ===========================*/
+
+		.product-page{
+
+			width:100%;
+
+			max-width:1200px;
+
+			margin:10px auto;
+
+			padding:0 10px;
+
+			}
+
+
+		/* MAIN CARD */
+
+		.product-card{
+
+		background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+		padding:18px 22px;
+
+
+		border-radius:18px;
+		
+
+
+		box-shadow:0 5px 18px rgba(0,0,0,0.08);
+
+		}
+
+
+		/* MAIN IMAGE BOX */
+
+		.image-box{
+
+		height:425px;
+
+		border:1px solid #E5E7EB;
+
+		border-radius:20px;
+
+		overflow:hidden;
+
+		display:flex;
+
+		justify-content:center;
+
+		align-items:center;
+
+		background:#fff;
+		
+
+		}
+
+
+/*=============== MAIN IMAGE ===========*/
+
+		.main-img{
+
+		width:100%;
+
+		height:435px;
+
+		object-fit:contain;
+
+		padding:15px;
+
+		transition:.3s;
+
+		}
+
+
+		/* THUMBNAILS */
+
+		.thumbnail-box{
+
+		margin-top:18px;
+
+		display:flex;
+
+		flex-wrap:wrap;
+
+		gap:10px;
+		margin-left:10px;
+
+		}
+
+		.small-img{
+
+		width:155px;
+
+		height:155px;
+
+		object-fit:contain;
+
+		border:1px solid #ddd;
+
+		padding:6px;
+
+		margin-right:10px;
+
+		border-radius:15px;
+
+		cursor:pointer;
+
+		background:#fff;
+
+		transition:.3s;
+
+		}
+
+		.small-img:hover{
+
+		transform:translateY(-4px);
+
+		border:2px solid #0D6EFD;
+
+		}
+
+
+/*============ SPECIFICATION BOX ==================*/
+
+		.spec-box{
+
+		margin-top:12px;
+
+		padding:18px;
+
+		background:#F1F5F9;
+
+		border-radius:15px;
+
+		}
+
+		.spec-box h3{
+
+		margin-top:0;
+
+		font-size:22px;
+
+		font-weight:700;
+
+		margin-bottom:15px;
+
+		}
+
+		.spec-box p{
+
+		font-size:16px;
+
+		margin:6px 0;
+
+		}
+
+
+/*================ PRODUCT NAME ============*/
+
+		.product-name{
+
+		font-size:34px;
+
+		font-weight:700;
+
+		margin-top:0;
+
+		color:white;
+
+		}
+
+
+		/* RATING */
+
+		.rating{
+
+		font-size:20px;
+
+		color:#F4B400;
+
+		margin-top:12px;
+
+		}
+
+
+		/* PRICE */
+
+		.price{
+
+		font-size:36px;
+
+		font-weight:700;
+
+		color:#E63946;
+
+		margin-top:15px;
+
+		}
+
+
+/*================ STOCK ================*/
+
+		.stock{
+
+		font-size:18px;
+
+		font-weight:600;
+
+		color:#00FF00;
+
+		margin-top:12px;
+
+		}
+
+
+		/* QUANTITY */
+
+		.qty-title{
+
+		font-size:18px;
+
+		font-weight:600;
+		margin-left:16px;
+		margin-top:15px;
+		color:white;
+
+		}
+
+		.quantity-box{
+
+		margin-top:8px;
+		margin-left:5px;
+
+		}
+
+
+/*================ QUANTITY BUTTON ===================*/
+
+		.qty-btn{
+
+		width:45px;
+
+		height:35px;
+
+		border:none;
+
+		background:#E63946;
+
+		color:#fff;
+
+		font-size:22px;
+
+		border-radius:0px;
+
+		}
+
+
+		/* QUANTITY INPUT */
+
+		.qty-input{
+
+		width:60px;
+
+		height:35px;
+
+		text-align:center;
+
+		border:1px solid #ccc;
+
+		border-radius:0px;
+
+		font-size:18px;
+
+		}
+		.qty-btn:hover{
+
+		background:#C1121F;
+
+		color:#fff;
+		}
+		
+		
+		.quantity-box{
+
+		display:flex;
+
+		}
+
+/*=============== BUTTON =================*/
+
+		.button-box{
+
+		margin-top:15px;
+
+		}
+
+		.btn-cart{
+
+		padding:12px 28px;
+
+		border:none;
+
+		border-radius:8px;
+
+		background:#0D6EFD;
+
+		color:#fff;
+
+		font-weight:700;
+
+	
+		margin-top:15px;
+
+		width:48%;
+
+
+		}
+
+		.btn-cart:hover{
+
+		background:#084298;
+
+		color:#fff;
+
+		}
+
+		.btn-buy{
+
+		padding:12px 28px;
+
+		border:none;
+
+		border-radius:8px;
+		
+		
+
+		background:#E63946;
+
+		color:#fff;
+
+		font-weight:700;
+		width:48%;
+
+		}
+
+		.btn-buy:hover{
+
+		background:#C1121F;
+
+		color:#fff;
+
+		}
+		.btn-cart,
+		.btn-buy{
+
+		display:inline-block;
+
+		text-decoration:none !important;
+
+		text-align:center;
+
+		color:#fff;
+
+		}
+
+
+		.btn-cart:hover,
+		.btn-buy:hover,
+		.btn-cart:focus,
+		.btn-buy:focus,
+		.btn-cart:active,
+		.btn-buy:active{
+
+		text-decoration:none !important;
+
+		color:#fff;
+
+		outline:none;
+
+		}
+
+/*================= DESCRIPTION =================*/
+
+		.description-box{
+
+		margin-top:12px;
+
+		background:#FFF8E7;
+
+		padding:14px;
+
+		border-radius:15px;
+
+		}
+
+		.description-box h3{
+
+		margin-top:0;
+
+		font-size:22px;
+
+		font-weight:700;
+
+		}
+
+		.description-box p{
+
+		font-size:16px;
+
+		line-height:28px;
+
+		margin:0;
+
+		}
+
+
+/*==================== DELIVERY SECTION ======================*/
+
+		.delivery-section{
+
+		margin-top:30px;
+
+	  background: #3A1C71;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+		padding:22px;
+
+		border-radius:18px;
+
+		box-shadow:0 5px 18px rgba(0,0,0,0.08);
+
+		}
+
+		.delivery-heading{
+
+		text-align:center;
+
+		font-size:24px;
+
+		font-weight:700;
+
+		margin-bottom:20px;
+
+		color:white;
+
+		}
+
+		.delivery-card{
+
+		background:#fff;
+
+		padding:18px;
+
+		border-radius:15px;
+
+		text-align:center;
+
+		height:175px;
+		
+
+		}
+
+		.delivery-icon{
+
+		width:55px;
+
+		height:55px;
+
+		margin-bottom:12px;
+
+		}
+
+		.delivery-card h4{
+
+		font-size:20px;
+
+		font-weight:700;
+
+		margin-bottom:10px;
+
+		}
+
+		.delivery-card p{
+
+		font-size:15px;
+
+		line-height:24px;
+
+		color:#64748B;
+
+		}
+
+
+/* ================= RESPONSIVE =========================*/
+
+		@media(max-width:991px){
+
+		.product-name{
+
+		margin-top:25px;
+
+		}
+
+		}
+
+		@media(max-width:768px){
+
+		.product-page{
+
+		width:100%;
+
+		padding:0 10px;
+
+		}
+
+		.image-box{
+
+		height:220px;
+
+		}
+
+		.main-img{
+
+		height:200px;
+
+		}
+
+		.thumbnail-box{
+
+		display:flex;
+
+		flex-wrap:wrap;
+
+		gap:10px;
+
+		}
+
+		.small-img{
+
+		width:60px;
+
+		height:60px;
+
+		margin-right:0;
+
+		}
+
+		.product-name{
+
+		font-size:22px;
+
+		margin-top:20px;
+
+		}
+
+		.price{
+
+		font-size:28px;
+
+		}
+
+		.description-box{
+
+		padding:14px;
+
+		}
+
+		.button-box{
+
+		display:flex;
+
+		flex-wrap:wrap;
+
+		gap:10px;
+
+		}
+
+		.btn-cart,
+
+		.btn-buy{
+
+		width:100%;
+
+		margin-bottom:0;
+
+		}
+
+		.delivery-card{
+
+		height:auto;
+
+		margin-bottom:15px;
+
+		}
+
+		}
+/*=================== FOOTER =============*/
+
+			.footer-section{
+				background-color:black;
+
+				color:white;
+
+				padding:50px 0 20px;
+
+				margin-top:50px;
+				}
+
+			.footer-logo{
+
+				color:#e63946;
+
+				font-weight:bold;
+
+				margin-bottom:20px;
+				}
+
+			.footer-box h3{
+			font-family:monaco;
+
+				color:#e63946;
+				
+
+				margin-bottom:20px;
+
+				font-weight:bold;
+				}
+
+			.footer-box p{
+
+				color:#ccc;
+
+				line-height:28px;
+				}
+
+			.footer-links{
+
+				list-style:none;
+
+				padding:0;
+				}
+
+			.footer-links li{
+
+				margin-bottom:12px;
+				}
+
+			.footer-links li a{
+
+				color:#ccc;
+
+				text-decoration:none;
+
+				transition:0.3s;
+				}
+
+			.footer-links li a:hover{
+
+				color:#e63946;
+
+				padding-left:5px;
+				}
+
+			.footer-section hr{
+
+				border-color:#333;
+
+				margin-top:30px;
+				}
+
+			.footer-bottom{
+
+				text-align:center;
+
+				color:#aaa;
+
+				margin-top:15px;
+				}
+				
+				 /* FOOTER */
+
+			.footer-section{
+				background-color:black;
+
+				color:white;
+
+				padding:50px 0 20px;
+
+				margin-top:50px;
+				}
+
+			.footer-logo{
+
+				color:#e63946;
+
+				font-weight:bold;
+
+				margin-bottom:20px;
+				}
+
+			.footer-box h3{
+			font-family:monaco;
+
+				color:#e63946;
+				
+
+				margin-bottom:20px;
+
+				font-weight:bold;
+				}
+
+			.footer-box p{
+
+				color:#ccc;
+
+				line-height:28px;
+				}
+
+			.footer-links{
+
+				list-style:none;
+
+				padding:0;
+				}
+
+			.footer-links li{
+
+				margin-bottom:12px;
+				}
+
+			.footer-links li a{
+
+				color:#ccc;
+
+				text-decoration:none;
+
+				transition:0.3s;
+				}
+
+			.footer-links li a:hover{
+
+				color:#e63946;
+
+				padding-left:5px;
+				}
+
+			.footer-section hr{
+
+				border-color:#333;
+
+				margin-top:30px;
+				}
+
+			.footer-bottom{
+
+				text-align:center;
+
+				color:#aaa;
+
+				margin-top:15px;
+				}
+</style>
+
+</head>
+
+	<body>
+	<!-- NAVBAR -->
+<section>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="img/SFLogo.jpeg" alt="Sports Freak Logo">
+
+                <span>SPORTS FREAK</span>
+
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right"
+             id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="TEAMSPORT.html">TEAM SPORT</a></li>
+
+                <li><a href="INDIVIDUALSPORT.html">INDIVIDUAL SPORT</a></li>
+
+                <li><a href="GAMERULE.html">GAME RULES</a></li>
+				
+				<li><a href="CARETIPS.html">CARE TIPS</a></li>
+
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+</section>
+
+<!----PRODUCT SECTION---->
+
+		<div class="container product-page">
+
+		<div class="product-card">
+
+		<div class="row">
+
+<!-- LEFT SIDE -->
+
+<div class="col-md-6 col-sm-12">
+
+<div class="image-box">
+
+<img src="IMG/CKT/glv10.jpg"
+
+id="mainImage"
+
+class="main-img"
+
+alt="SG Shield 20 Cricket Ball">
+
+</div>
+
+
+<div class="thumbnail-box">
+
+<img src="IMG/CKT/glv10.jpg"
+
+class="small-img"
+
+onclick="changeImage('IMG/CKT/glv10.jpg')"
+
+alt="Image 1">
+
+
+<img src="IMG/CKT/glv12.jpg"
+
+class="small-img"
+
+onclick="changeImage('IMG/CKT/glv12.jpg')"
+
+alt="Image 2">
+
+
+<img src="IMG/CKT/glv11.jpg"
+
+class="small-img"
+
+onclick="changeImage('IMG/CKT/glv11.jpg')"
+
+alt="Image 3">
+
+</div>
+
+</div>
+
+
+
+<!-- RIGHT SIDE -->
+
+<div class="col-md-6 col-sm-12">
+<h1 class="product-name">
+
+DSC Krunch 7.0 Batting Gloves
+
+</h1>
+
+
+<div class="rating">
+
+★★★★☆ (4.6)
+
+</div>
+
+
+<div class="price">
+
+₹1,299
+
+</div>
+
+
+<div class="stock">
+
+✓ In Stock
+
+</div>
+
+
+<!-- PRODUCT SPECIFICATIONS -->
+
+<div class="spec-box">
+
+<h3>
+
+Product Specifications
+
+</h3>
+
+<p>
+
+<b>Brand :</b>
+
+DSC
+
+</p>
+
+<p>
+
+<b>Material :</b>
+
+Premium PU & Cotton Filling
+
+</p>
+
+<p>
+
+<b>Colour :</b>
+
+White
+
+</p>
+
+<p>
+
+<b>Suitable For :</b>
+
+Intermediate & Professional Players
+
+</p>
+
+<p>
+
+<b>Package Contains :</b>
+
+1 Pair of Batting Gloves
+
+</p>
+
+</div>
+
+
+<!-- PRODUCT DESCRIPTION -->
+
+<div class="description-box">
+
+<h3>
+
+Product Description
+
+</h3>
+
+<p>
+
+The DSC Krunch 7.0 Batting Gloves are designed to provide excellent comfort, protection and flexibility during batting sessions. They feature lightweight padding, a secure fit and enhanced grip, making them suitable for regular practice, training and competitive matches.
+
+</p>
+
+</div>
+<div class="qty-right">
+<div class="qty-title">
+
+Quantity
+
+</div>
+
+
+<div class="quantity-box">
+
+<button class="qty-btn">
+
+-
+
+</button>
+
+
+<input type="text"
+
+value="1"
+
+class="qty-input"
+
+readonly>
+
+
+<button class="qty-btn">
+
++
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- BUTTONS -->
+
+<div class="button-box">
+
+<a href="TEAMSPORT.html"
+
+class="btn-cart">
+
+ADD TO CART
+
+</a>
+
+
+<a href="PLACEORDER.html"
+
+class="btn-buy">
+
+BUY NOW
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+		</div>
+
+
+		<!-- DELIVERY SERVICES -->
+
+		<div class="delivery-section">
+
+		<div class="delivery-heading">
+
+		DELIVERY SERVICES
+
+		</div>
+
+		<div class="row">
+
+		<div class="col-sm-4">
+
+		<div class="delivery-card">
+
+		<img src="IMG/exp.png"
+
+		class="delivery-icon"
+
+		alt="Shipping">
+
+		<h4>
+
+		Fast Shipping
+
+		</h4>
+
+
+		<p>
+
+		Delivered within
+
+		3-5 business days
+
+		across India.
+
+		</p>
+
+		</div>
+
+		</div>
+
+		<div class="col-sm-4">
+
+		<div class="delivery-card">
+
+		<img src="IMG/cash.png"
+
+		class="delivery-icon"
+
+		alt="COD">
+
+		<h4>
+
+		Cash On Delivery
+
+		</h4>
+
+
+		<p>
+
+		Pay securely at
+
+		your doorstep
+
+		after receiving.
+
+		</p>
+
+		</div>
+
+		</div>
+
+		<div class="col-sm-4">
+
+		<div class="delivery-card">
+
+		<img src="IMG/easy.png"
+
+		class="delivery-icon"
+
+		alt="Replacement">
+
+		<h4>
+
+		Easy Replacement
+
+		</h4>
+
+		<p>
+
+		7-day easy
+
+		replacement
+
+		available.
+
+		</p>
+
+		</div>
+
+		</div>
+
+		</div>
+
+		</div>
+
+		</div>
+
+		<script>
+
+		/* IMAGE SWITCH */
+
+		function changeImage(image){
+
+		document.getElementById("mainImage").src=image;
+
+		}
+
+
+		/* QUANTITY SELECTOR */
+
+		var qty=document.querySelector(".qty-input");
+
+		var plus=document.querySelectorAll(".qty-btn")[1];
+
+		var minus=document.querySelectorAll(".qty-btn")[0];
+
+		plus.onclick=function(){
+
+		qty.value=parseInt(qty.value)+1;
+
+		}
+
+
+		minus.onclick=function(){
+
+		if(parseInt(qty.value)>1){
+
+		qty.value=parseInt(qty.value)-1;
+
+		}
+
+		}
+
+		</script>
+		
+		<!-- FOOTER -->
+<section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LOGO & ABOUT -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3 class="footer-logo">
+                    SPORTS FREAK
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="TERMS.html">Terms & Conditions</a>
+                    </li>
+
+                    <li>
+                        <a href="REFUND.html">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="PRIV_POLICY.html">Privacy Policy</a>
+                    </li>
+					
+                </ul>
+
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="TEAMSPORT.html">Team Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="INDIVIDUALSPORT.html">Individual Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="GAMERULE.html">Game Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="ABOUTUS.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="col-md-4 col-sm-12 footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    📍 Chennai, Tamil Nadu
+                </p>
+
+                <p>
+                    📞 6381942795
+                </p>
+
+                <p>
+                    📧 sanjayin440@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SPORTS FREAK | All Rights Reserved
+
+            </p>
+			<p>All images used on this website are for educational purposes only..</P>
+
+        </div>
+
+    </div>
+
+</footer>
+</section>
+		
+
+</body>
+
+</html>
