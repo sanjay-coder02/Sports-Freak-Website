@@ -1,0 +1,647 @@
+<html>
+<head>
+<title>INDVIDUAL SPORT COLLECTION </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+	body{
+	background:linear-gradient(135deg,#edf2f7,#e2e8f0,#cbd5e1);
+background-attachment:fixed;
+
+	}
+	/* NAVBAR */
+
+		.navbar{
+
+			background:#fff;
+
+			border:none;
+
+			border-radius:0;
+
+			margin-bottom:20px;
+
+			padding:5px 0;
+
+			box-shadow:0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		/* LOGO + BRAND */
+
+		.navbar-brand{
+
+			display:flex;
+
+			align-items:center;
+
+			padding-left:20px;
+
+			height:70px;
+		}
+
+		.navbar-brand img{
+
+			width:70px;
+
+			height:70px;
+
+			border-radius:50%;
+
+			margin-right:12px;
+		}
+
+		.navbar-brand span{
+
+			color:#e63946;
+
+			font-size:34px;
+
+			font-family:Georgia, serif;
+
+			font-weight:bold;
+		}
+
+		/* MENU */
+
+		.navbar-nav{
+
+			margin-top:8px;
+		}
+
+		.navbar-nav li a{
+
+			color:#333 !important;
+
+			font-size:18px;
+
+			font-weight:bold;
+			font-family:monaco;
+
+			padding:20px;
+
+			transition:0.3s;
+			}
+
+		.navbar-nav li a:hover{
+
+			color:#e63946 !important;
+		}
+		
+		@media (max-width:768px){
+
+	.navbar-brand{
+		height:60px;
+		padding-left:10px;
+		white-space:nowrap;
+	}
+
+	.navbar-brand img{
+		width:45px;
+		height:45px;
+		margin-right:8px;
+	}
+
+	.navbar-brand span{
+		font-size:22px;
+	}
+
+		}
+		
+/*======================= indv-sport ================*/
+
+	.indv-BOX {
+	 
+		background: #ED213A;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		font-family:monaco;
+		color: white;
+		
+		margin-bottom:30px;
+		
+		}
+		
+	.indv-CHESS {
+	
+		padding:10px;
+		 
+		background: #ED213A;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		font-family:monaco;
+		
+		color: white;
+		
+		margin-bottom:15px;
+		
+		}
+	
+	.ts-content p {
+
+		font-size: 16px;
+		
+		color: #ddd;
+		
+		}
+
+
+/*=============== product-card ==============*/
+	
+	.product-card{
+		padding:15px;
+		border-radius:8px;
+		text-align:center;
+		margin-bottom:15px;
+
+		background:#fff;
+
+		box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+		transition:all 0.3s ease;
+	
+		}
+
+	.product-card:hover{
+		transform:translateY(-8px);
+
+		box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+		cursor:pointer;
+		}
+
+	.product-img{
+		height:350px;
+		width:100%;
+		border-radius:12px;
+		object-fit:contain;
+		margin-bottom:5px;
+
+		transition:transform 0.3s ease;
+		}
+
+	.product-card:hover .product-img{
+		transform:scale(1.05);
+			} 
+			
+	.product{
+			font-size:15px;
+			font-weight:600;
+			margin-bottom:5px;
+			}
+
+	.price{
+			color:black;
+			font-size:13px;
+			margin-bottom:10px;
+			}
+		
+/*========== BUTTONS ======================*/
+
+				.btn-buy{
+			padding:10px 18px;
+			background-color:#579999;
+			color:#fff;
+			border:none;
+			border-radius:6px;
+			cursor:pointer;
+
+			box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+			transition:all 0.3s ease;
+		}
+
+		.btn-cart{
+			padding:10px 18px;
+			background-color:#E34646;
+			color:#fff;
+			border:none;
+			border-radius:6px;
+			cursor:pointer;
+
+			box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+			transition:all 0.3s ease;
+		}
+
+		.btn-buy:hover{
+			background-color:#D6A367;
+			color:#fff;
+
+			transform:translateY(-3px);
+
+			box-shadow:0 8px 18px rgba(0,0,0,0.25);
+		}
+
+		.btn-cart:hover{
+			background-color:#D6A367;
+			color:#fff;
+
+			transform:translateY(-3px);
+
+			box-shadow:0 8px 18px rgba(0,0,0,0.25);
+		}
+
+		.br1{
+		margin:40px 40px 0px 40px;
+		}
+
+		.p2b{
+		margin-bottom:15px;
+		}
+		
+
+ /*==================== FOOTER =====================*/
+
+			.footer-section{
+				background-color:black;
+
+				color:white;
+
+				padding:50px 0 20px;
+
+				margin-top:50px;
+				}
+
+			.footer-logo{
+
+				color:#e63946;
+
+				font-weight:bold;
+
+				margin-bottom:20px;
+				}
+
+			.footer-box h3{
+			font-family:monaco;
+
+				color:#e63946;
+				
+
+				margin-bottom:20px;
+
+				font-weight:bold;
+				}
+
+			.footer-box p{
+
+				color:#ccc;
+
+				line-height:28px;
+				}
+
+			.footer-links{
+
+				list-style:none;
+
+				padding:0;
+				}
+
+			.footer-links li{
+
+				margin-bottom:12px;
+				}
+
+			.footer-links li a{
+
+				color:#ccc;
+
+				text-decoration:none;
+
+				transition:0.3s;
+				}
+
+			.footer-links li a:hover{
+
+				color:#e63946;
+
+				padding-left:5px;
+				}
+
+			.footer-section hr{
+
+				border-color:#333;
+
+				margin-top:30px;
+				}
+
+			.footer-bottom{
+
+				text-align:center;
+
+				color:#aaa;
+
+				margin-top:15px;
+				}
+		
+
+</style>
+<!-- NAVBAR -->
+<section>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="IMG/SFLogo.jpeg" alt="Sports Freak Logo">
+
+                <span>SPORTS FREAK</span>
+
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right"
+             id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="TEAMSPORT.html">TEAM SPORT</a></li>
+
+                <li><a href="INDIVIDUALSPORT.html">INDIVIDUAL SPORT</a></li>
+
+                <li><a href="GAMERULE.html">GAME RULES</a></li>
+				
+				<li><a href="CARETIPS.html">CARE TIPS</a></li>
+
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+</section>
+
+<!---CHESS-------------------------------------->
+<section>
+<div class="container-fluid indv-CHESS text-center">
+  <div class="ts-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1></h1>
+	<h2>CHESS COLLECTIONS</h2>
+    <h5>EXPLORE ALL CHESS PRODUCTS</h5>
+  </div>
+</div>
+<div class="container-fluid br1">
+	<div class="row">
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/b10.webp" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">1950'S Circa Bohemia Staunton Chess Set</h4>
+			<h5 class="price">MRP- ₹13,299</h5>
+			<a href="CHESS1p1.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">		
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/b20.webp" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Tournament Chess Set In Rosewood</h4>
+			<h5 class="price">MRP- ₹25,099</h5>
+			<a href="CHESS2p2.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/b30.webp" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Chessbazaar French Lardy Chess Set</h4>
+			<h5 class="price">MRP- ₹17,599</h5>
+			<a href="CHESS3p3.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc1.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Stauton Luxury Chess PIeces</h4>
+			<h5 class="price">MRP ₹1,149</h5>
+			<a href="CHESSp4.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc2.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Black and White premium pieces </h4>
+			<h5 class="price">MRP- ₹1,050</h5>
+			<a href="CHESSp5.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">			
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/pc3.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Ancient Wooden Pieces</h4>
+			<h5 class="price">MRP- ₹1,100</h5>
+			<a href="CHESSp6.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+				
+		
+<div class="container-fluid br1">
+	<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb1.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product"> Brown Walnut Chess Board<h4>
+			<h5 class="price">MRP ₹8,999</h5>
+			<a href="CHESSb1p7.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb2.jpeg" class="img-responsive product-img"></div>
+			<div class="p2b">
+			<h4 class="product">Deluxe Black And Chess Board</h4>
+			<h5 class="price">MRP- ₹7,449</h5>
+			<a href="CHESSb2p8.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">			
+			<div class="product-card text-center">
+			<img src="IMG/CHESS/cb3.jpeg" class="img-responsive  product-img"></div>
+			<div class="p2b">
+			<h3 class="product">Beach Wood Chess Board</h4>
+			<h5 class="price">MRP- ₹10,100</h5>
+			<a href="CHESSb3p9.html" class="btn btn-buy">BUY NOW</a>
+
+			<a href="CHESS.html" class="btn btn-cart">ADD TO CART</a>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+		
+</section>
+<!-- FOOTER -->
+<section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LOGO & ABOUT -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3 class="footer-logo">
+                    SPORTS FREAK
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="TERMS.html">Terms & Conditions</a>
+                    </li>
+
+                    <li>
+                        <a href="REFUND.html">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="PRIV_POLICY.html">Privacy Policy</a>
+                    </li>
+					
+                </ul>
+
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-md-4 col-sm-6 footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="TEAMSPORT.html">Team Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="INDIVIDUALSPORT.html">Individual Sport</a>
+                    </li>
+
+                    <li>
+                        <a href="GAMERULE.html">Game Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="ABOUTUS.html">About Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="col-md-4 col-sm-12 footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    📍 Chennai, Tamil Nadu
+                </p>
+
+                <p>
+                    📞 6381942795
+                </p>
+
+                <p>
+                    📧 sanjayin440@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SPORTS FREAK | All Rights Reserved
+
+            </p>
+			<p>All images used on this website are for educational purposes only..</P>
+
+        </div>
+
+    </div>
+
+</footer>
+</section>
+
+</body>
+</html>
